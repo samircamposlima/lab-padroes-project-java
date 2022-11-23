@@ -1,16 +1,16 @@
 package one.digitalinavation.gof;
 
-import one.digitalinavation.gof.Singleton.SingletonEager;
-import one.digitalinavation.gof.Singleton.SingletonLazy;
-import one.digitalinavation.gof.Singleton.SingletonLazyHolder;
-import one.digitalinavation.gof.Strategy.Comportamento;
-import one.digitalinavation.gof.Strategy.ComportamentoAgressivo;
-import one.digitalinavation.gof.Strategy.ComportamentoDefensivo;
-import one.digitalinavation.gof.Strategy.ComportamentoNormal;
-import one.digitalinavation.gof.Strategy.Robo;
+import one.digitalinavation.gof.Facade.Facade;
+import one.digitalinavation.gof.Singleton.*;
+import one.digitalinavation.gof.Strategy.*;
+
+
 
 public class Teste {
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
         // Testes relacionados ao Design Pattern (Singleton):
@@ -46,6 +46,12 @@ public class Teste {
         robo.mover();
         robo.mover();
         robo.mover();
+
+
+        //(Facede):
+
+        Facade facade = new  Facade();
+        facade.migrarCliente("Venilton", "14801788");
 
 
     
